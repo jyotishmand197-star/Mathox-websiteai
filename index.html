@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathox AI Math Helper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        .container {
+            max-width: 90%;
+            margin: auto;
+            padding: 2rem;
+        }
+        .card {
+            background-color: #2d3748;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        textarea {
+            resize: none;
+        }
+        #answer-box {
+            background-color: #1a202c;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            min-height: 100px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4 sm:p-6">
+
+    <div class="container space-y-8">
+        <header class="text-center space-y-2">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white">Mathox</h1>
+            <p class="text-lg sm:text-xl text-gray-400">Your personal AI math problem solver.</p>
+            <p class="text-sm text-gray-500">Founded by Jyotishman Das | For inquiries: jyotishmand197@gmail.com</p>
+        </header>
+
+        <main class="w-full lg:w-3/4 mx-auto">
+            <div class="card space-y-6">
+                <div class="space-y-2">
+                    <label for="math-question" class="block text-gray-300 font-semibold">Enter your math question:</label>
+                    <textarea id="math-question" rows="6
